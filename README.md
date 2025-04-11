@@ -6,8 +6,6 @@
 
 ## Installation
 
-> Coming soon to NuGet!
-
 ```bash
 dotnet add package FastReflections
 ```
