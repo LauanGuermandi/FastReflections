@@ -1,17 +1,10 @@
-# 🚀 FastReflections
+# FastReflections
 
 **FastReflections** is a lightweight and high-performance utility library for .NET that provides fast, cached reflection-based access to methods, properties, using expressions, and types with clean and expressive syntax.
 
-## ✨ Features
-
-- ✅ Invoke methods dynamically 
-- 🔍 Get or set property values 
-- ⚡ Type discovery with internal caching
-- 🧠 Built-in cache for maximum performance
-
 ---
 
-## 📦 Installation
+## Installation
 
 > Coming soon to NuGet!
 
@@ -21,9 +14,9 @@ dotnet add package FastReflections
 
 ---
 
-## 🚀 Usage
+## Usage
 
-### 🧠 Invoke Method
+### Invoke Method
 
 ```csharp
 var instance = new MyClass();
@@ -33,7 +26,7 @@ var result = FastReflections.Invoke<MyClass, string>(method, instance, "John");
 // result => "Hello, John"
 ```
 
-### 📥 Get Property
+### Get Property
 
 ```csharp
 var instance = new MyClass { Name = "FastReflections" };
@@ -42,7 +35,7 @@ var value = FastReflections.GetPropertyValue(instance, x => x.Name);
 // value => "FastReflections"
 ```
 
-### 📤 Set Property
+### Set Property
 
 ```csharp
 var instance = new MyClass();
@@ -51,7 +44,7 @@ FastReflections.SetPropertyValue(instance, x => x.Name, "Updated");
 // instance.Name => "Updated"
 ```
 
-### 🔍 Find Type by Name
+### Find Type by Name
 
 ```csharp
 var type = FastReflections.GetTypeByName("MyNamespace.MyClass");
@@ -60,16 +53,7 @@ var type = FastReflections.GetTypeByName("MyNamespace.MyClass");
 
 ---
 
-## 🧪 Unit Tested
-
-All functionality is covered with clear and readable unit tests using:
-
-- `xUnit`
-- `Shouldly`
-
----
-
-## 💡 When to Use
+## When to Use
 
 Use `FastReflections` when:
 
@@ -79,7 +63,7 @@ Use `FastReflections` when:
 
 ---
 
-## ⚙️ Internals
+## Internals
 
 - Uses `Expression Trees` for performance
 - Thread-safe `ConcurrentDictionary` for caching
@@ -87,6 +71,6 @@ Use `FastReflections` when:
 
 ---
 
-## 📄 License
+##  License
 
-MIT License © YourName
+MIT License © LauanGuermandi
